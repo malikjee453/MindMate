@@ -1,0 +1,19 @@
+# Secrets — never commit real keys
+.streamlit/secrets.toml
+
+# Source books are copyrighted — don't publish them to a public repo
+data/source_pdfs/*.pdf
+
+# Vector DB (rebuild locally via rag/ingest.py, or commit deliberately if you
+# understand the copyright implications for your use case)
+data/chroma_db/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
